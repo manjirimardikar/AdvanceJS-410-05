@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./index.js"></script>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(255,160,151);
+            margin: 160px;
+        }
+        .cardContainer{
+            border: 2px solid red;
+            box-shadow: red 1.95px 1.95px 2.6px;
+            width: 40vw;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-size: 25px;
+            padding: 15px;
+            background-color: rgb(255,204,194);
+        }
+        #nextButton{
+            width: 80px;
+            height: 30px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            background-color: rgb(245,174,150);
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cardContainer" id="cardContainer">
+        <div class="card" id="card">
+            <b><blockquote id="quote"></blockquote></b>
+            <h4 id="author"></h4>
+            <hr>
+            <button id="nextButton" onclick="nextQuote()">Next</button>
+        </div>
+    </div>
+</body>
+</html>
